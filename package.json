@@ -1,0 +1,30 @@
+{
+  "name": "graphql-yoga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && npm run production",
+    "build": "babel src -d dist --source-maps",
+    "production": "node dist/index.js",
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/node": "^7.20.5",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "graphql-yoga": "^1.18.3",
+    "jwt-simple": "^0.5.6",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.7.5",
+    "nodemon": "^2.0.20"
+  }
+}
